@@ -1,0 +1,28 @@
+
+.ID {
+    text-align: center;
+    color: rgb(216, 135, 15);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.IDtitulo {
+    font-family: serif;
+    color: rgb(196, 133, 57);
+
+}
+
+.Idparagrafo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(170, 115, 12);
+}
+
+h4 {
+    font-family: Garamond, serif;
+    color: rgb(202, 126, 11);
+}
+
+p {
+    border: 2px solid bisque;
+    border-radius: 12px;
+    padding: 5px;
+}

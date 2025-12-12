@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./stylization.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>A Noite Estrelada</title>
+
+    <style>
+      .slideshow-container {
+        display: flex;
+        max-width: 1200px;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .meuSlide {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 800px) {
+        .conteudo-lado-a-lado {
+          flex-direction: column;
+        }
+        .slideshow-container {
+          max-width: 100%;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Bloco fixo de informações -->
+    <div  class="bloco-texto-flutuante fade-scroll">
+      <p>
+        <strong>Athletics:</strong> Watch running, jumping, and throwing events.
+        <br />
+        Este é um bloco de informação extra que flutua na tela.
+        <br /><br />
+        <strong>Dica:</strong> Role a página para ver o efeito de fixação.
+        <br /><br />
+        Adicionei texto extra aqui para testar a barra de rolagem interna.
+      </p>
+    </div>
+
+    <!-- Título principal -->
+    <div class="titulo-principal">
+      <div class="card-titulo">
+        <h1>Vincent Willem van Gogh</h1>
+      </div>
+      <div class="img-card">
+        <img src="./img/Van-Gogh.jpg" alt="van Gogh" width="385" height="250" />
+      </div>
+    </div>
+
+    <!-- Conteúdo principal com texto + slideshow -->
+    <div class="bloco-texto-flutuante">
+      <div class="conteudo-lado-a-lado">
+
+        <!-- Texto sobre Van Gogh -->
+        <div class="text">
+          <p>
+            Vincent van Gogh foi um dos artistas mais marcantes e intensos da
+            história da arte. Nascido em 1853, na Holanda, ele não teve uma vida
+            fácil: passou por dificuldades financeiras, crises emocionais e muita
+            incompreensão enquanto estava vivo. Apesar disso, sua sensibilidade e
+            jeito único de enxergar o mundo transformaram completamente a pintura
+            moderna. Van Gogh é conhecido por seu estilo vibrante, pinceladas
+            fortes e cores exageradamente vivas — tudo isso refletia a turbulência
+            e a paixão que ele carregava por dentro. Obras como Noite Estrelada,
+            Girassóis e Quarto em Arles mostram exatamente essa mistura de emoção
+            e intensidade que virou sua marca registrada. Durante sua vida, ele
+            praticamente não vendeu quadros, mas continuou produzindo sem parar,
+            apoiado principalmente por seu irmão Theo, que foi seu maior amigo e
+            incentivador. Van Gogh enfrentou problemas graves de saúde mental, e
+            suas crises acabaram marcando profundamente sua trajetória. Ele
+            morreu muito jovem, aos 37 anos, mas deixou mais de 2.000 obras entre
+            pinturas e desenhos. Hoje, é considerado um dos maiores gênios da
+            arte, e sua história inspira milhões de pessoas pelo mundo — uma prova
+            de que, às vezes, o valor de alguém só é realmente reconhecido muito
+            depois.
+          </p>
+        </div>
+
+        <!-- Slide -->
+        <div class="slideshow-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            class="meuSlide"
+            style="display: block"
+          />
+          <img
+            src="https://static.todamateria.com.br/upload/va/ng/van-gogh-og.jpg?class=ogImageWide"
+            class="meuSlide"
+            style="display: none"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhKc2ClGlC_9ZJpRHAfXMQW-gGjsb8kTbjDQ&sve"
+            class="meuSlide"
+            style="display: none"
+          />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Script do slideshow -->
+    <script>
+      let slideIndex = 0;
+      const tempoTroca = 3000;
+
+      function mostrarSlides() {
+        let slides = document.getElementsByClassName("meuSlide");
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(mostrarSlides, tempoTroca);
+      }
+
+      mostrarSlides();
+    </script>
+
+    <!-- Lista e detalhes -->
+    <div class="bloco-texto-flutuante">
+      <div class="linha-horizontal">
+
+        <section class="work">
+          <h4>Principais Aspectos da Vida e Obra</h4>
+          <ul>
+            <li>
+              <strong>Pós-Impressionismo:</strong> Van Gogh é o maior nome desse movimento...
+            </li>
+            <li>
+              <strong>A Carreira Curta:</strong> Ele só começou a pintar seriamente por volta dos 27 anos...
+            </li>
+            <li>
+              <strong>O Estilo:</strong> Suas obras são inconfundíveis:
+              <ul>
+                <li>Cores Vibrantes</li>
+                <li>Pinceladas Expressivas</li>
+                <li>Temas: Paisagens, naturezas-mortas...</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Relação com o Irmão Theo:</strong> Seu maior apoio financeiro e emocional.
+            </li>
+          </ul>
+        </section>
+
+        <section class="unordered">
+          <h3 class="ordered">Obras Mais Famosas</h3>
+          <ol type="I">
+            <li>A Noite Estrelada (1889)</li>
+            <li>Girassóis (1888–1889)</li>
+            <li>Quarto em Arles (1888)</li>
+            <li>Autorretratos (Vários)</li>
+            <li>Os Comedores de Batata (1885)</li>
+            <li>Terraço do Café na Praça do Fórum à Noite (1888)</li>
+          </ol>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Final -->
+    <div class="bloco-flutuante">
+      <div class="final-section">
+        <h2>Morte e legado</h2>
+
+        <div class="content-wrapper">
+          <p class="text-final">
+            Van Gogh lutou contra problemas de saúde mental... Ele se suicidou
+            em julho de 1890... hoje suas pinturas estão entre as mais valiosas
+            e icônicas do mundo.
+          </p>
+
+          <img
+            src="https://www.meisterdrucke.pt/kunstwerke/1260px/Vincent_van_Gogh_-_Almond_Blossom_-_%28MeisterDrucke-678838%29.jpg"
+            alt="Seu legado"
+            style="width: 445px; height: 400px; object-fit: cover"
+            class="legado"
+          />
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

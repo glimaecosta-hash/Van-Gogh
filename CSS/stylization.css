@@ -1,0 +1,133 @@
+
+
+.titulo-principal {
+    background-image: url('img/Fundo.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(27, 23, 23);
+    padding: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  
+}
+
+.linha-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.work {
+    width: 65%;
+    padding-right: 20px;
+}
+
+
+.unordered {
+    width: 30%;
+}
+
+
+.conteudo-lado-a-lado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+.text {
+    width: 50%;
+}
+
+.slideshow-container {
+    width: 50%;
+}
+
+.final-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 40px auto;
+   gap: 30px;
+}
+
+.content-wrapper {
+    width: 50%;
+}
+
+.legado {
+    width: 50%;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+/*deixa ele um em baixo do outro em telas pequena*/
+
+@media (max-width: 800px) {
+    .conteudo-lado-a-lado {
+        flex-direction: column;
+    }
+
+    .text, 
+    .slideshow-container { 
+        width: 100%;
+    }
+}
+
+
+.bloco-texto-flutuando {
+    position: fixed;
+    
+}
+
+
+/* ============================================== */
+/* ESTILIZAÇÃO PARA O BLOCO FLUTUANTE/FIXO */
+/* ============================================== */
+.bloco-texto-flutuante {
+    /* 1. Efeito Chave: Fixa o elemento na janela do navegador */
+    position: fixed; 
+    
+    /* 2. Posição na Tela (Exemplo: Canto Inferior Direito) */
+    bottom: 30px; /* 30px acima da borda inferior */
+    right: 30px;  /* 30px à esquerda da borda direita */
+    /* Você pode ajustar para 'top: 50%; left: 50%; transform: translate(-50%, -50%);' para centralizar */
+
+    /* 3. Dimensões Fixas (Para forçar a rolagem interna) */
+    width: 250px; 
+    height: 150px; 
+    
+    /* 4. Rolagem Interna (A barra de rolagem) */
+    overflow-y: auto; /* Mostra a barra somente se o conteúdo for maior que 150px */
+    
+    /* 5. Estilização Visual (Cores e Formato) */
+    background-color: #ffffff; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacá-lo */
+    border-radius: 8px; /* Cantos arredondados */
+    z-index: 1000; /* Garante que fique acima de outros elementos na página */
+}
+
+/* Ajuste de estilo para o parágrafo dentro do bloco flutuante */
+.bloco-texto-flutuante p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+

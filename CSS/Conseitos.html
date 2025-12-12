@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Conseitos</title>
+       <link rel="stylesheet" href="./Estilização.css">
+       <link rel="stylesheet" href="./lists.css">
+
+    <style>
+          
+          .IdParagramo {
+
+            color: aquamarine;
+            font-size: 18px; 
+          }
+
+    </style>
+    
+
+
+</head>
+<body>
+      <!--1 - Incline-->
+      <!--metado de colocar o CSS junto no código do HTML, uma das forma que pode utilizar-->
+       <!--Podemos utilizar varias regras de CSS, elas podem ser separadas por ponto e virgula e assim podemos fazer a união de varias ideias e modelos de estilização-->   
+      <h1 style="color: blue;">Mudar de Cor</h1>
+
+      <!--Multiplas Regras-->
+      <!--Podemos utilizar varias regras de CSS, elas podem ser separadas por ponto e virgula e assim podemos fazer a união de varias ideias e modelos de estilização-->
+       
+      <h1 style="color: blueviolet; font-size: 40px; border-bottom: 1px solid red;">Mudar e cor e Tamanho da fonto</h1>
+
+      <!--Internal CSS-->
+      <!--O internal e a melhor que o inline, nessa regra colocamos todos dentro da tag "style" com esse maneira podemos selecionar o elemento alvo 
+      p{
+      color:red
+      } -->
+      <p class="IdParagramo">
+        O texto de preenchimento Lorem ipum é utilizado por designers gráficos, programadores e impressoras com o objetivo de ocupar os espaços de um site, um produto publicitário ou uma produção editorial cujo texto final ainda não está pronto. Este expediente serve para ter uma idéia do produto final que em breve será impresso ou divulgado por canais digitais. 
+        Para ter um resultado que está de acordo com o resultado final, os designers gráficos, designers ou tipógrafos informam o texto de Lorem ipsum em relação a dois aspectos fundamentais, a saber, a legibilidade e os requisitos editoriais. A escolha da fonte e do tamanho da fonte com o qual o Lorem ipsum é reproduzido responde a necessidades específicas que vão além do preenchimento simples 
+        e simples de espaços dedicados a aceitar textos reais e que permitem a entrega de um produto publicitário/editorial, Tanto na web como no papel, 
+        é verdade à realidade. Seu absurdo permite que o olho se concentre apenas no layout gráfico que objetivamente avalie as escolhas estilísticas de um projeto, 
+        por isso é instalado em muitos programas gráficos em muitas plataformas de software de publicação pessoal e sistema de gerenciamento de conteúdo.
+    </p>
+
+    <!--External CSS-->
+    <!--Essa ferramenta utilizamos para estilizar o HTMl, mas criamos um arquivo css e por la fazemos a configuração necessaria com os elemento no HTML-->
+     
+      <h3>Vida Após a Vida</h3>
+
+        <p>
+             
+           Mas devo explicar-lhe como nasceu toda essa idéia equivocada de denunciar um prazer e louvar a dor, e lhe darei um relato completo do sistema, expondo os ensinamentos reais do grande explorador da verdade, o mestre-construtor. da felicidade humana. Ninguém rejeita, não gosta, ou evita o prazer em si, porque é prazer, mas porque aqueles que não sabem como buscar prazer encontram 
+           racionalmente conseqüências que são extremamente dolorosas. Tampouco há alguém que ame, busque ou deseje obter dor de si mesmo, porque é dor, mas ocasionalmente ocorrem circunstâncias em que a labuta e a dor podem lhe proporcionar um grande prazer. 
+           Para dar um exemplo trivial, qual de nós empreende algum exercício físico laborioso, exceto para obter alguma vantagem disso? Mas quem tem o direito de criticar um homem que escolhe desfrutar de um prazer que não tem conseqüências irritantes, ou alguém que evita uma dor que não produz prazer resultante?
+           Por outro lado, denunciamos com justa indignação e antipatia homens que são tão enganados e desmoralizados pelos encantos do prazer do momento, tão cegados pelo desejo, que não podem prever a dor e os problemas que estão fadados a acontecer; e a culpa igual pertence àqueles que falham em seu dever através da fraqueza da vontade, o que é o mesmo que dizer através do encolhimento da labuta e da dor. 
+           Esses casos são perfeitamente simples e fáceis de distinguir. Em uma hora livre, quando nosso poder de escolha é desimpedido e quando nada impede que sejamos capazes de fazer o que mais gostamos, todo prazer é para ser bem-vindo e toda dor evitada. Mas, em certas circunstâncias, e devido às reivindicações de dever ou às obrigações dos negócios, 
+           freqüentemente ocorrerá que os prazeres devem ser repudiados e os aborrecimentos aceitos. O homem sábio, portanto, sempre se atém a esse princípio de seleção: rejeita os prazeres para assegurar outros prazeres maiores ou tolera dores para evitar dores piores.
+
+
+        </p>
+
+        <!--Oredem do CSS-->
+
+        <p style="color: brown;">Ordem</p>
+
+  <!--Multiplos arquivos de Css-->
+
+  <!--E possivel ter mais de uma folha de estilo, precisamos so inportar para a tag "head". Essa pratica e boa para para divisão de paginas-->
+          <ol>
+              
+            <li>Amora</li>
+            <li>Maça Verde</li>
+            <li>Limão</li>
+
+          </ol>
+
+          <!--Classes e ids-->
+        <!--classe e ids são um ligação com o arquivo CSS, assim que colocamos ou classificamos no html fazendo em seguida a estilização no css. 
+        Alem disso conseguimos fazer especificamente elementos unicos e especificos com eles-->
+        <!--Ids: São utilizados para elements únicos ; Classes: servem para um ou mais elementos, geralmente utilizadas em conjuntos de elementos-->
+
+        <!--Classes-->
+        <!--A classes são inseridas atraves de um atributo html, o atributo e nome da classes podemos encolher o nome que desej, alem de podermos expecificar-->
+
+         <p class="parametros">Para nossa alegrinha, para sempre seja feita.</p>
+         <p class="parametro">Para nossa alegrinha, para sempre seja feita.</p>
+         <p class="parametros">Para nossa alegrinha, para sempre seja feita.</p>
+
+         <!--IDs-->
+         <!--Podemos escrever quaisquer valor que sera o nome do id. Eles são unicos, não e aconselhado a repetir eles-->
+
+         <h1 id="exclusivo">Titulo IDs</h1>
+         <!--A ordem dos elememtos-->
+                  
+           <h2 id="algum-titulo" class="titulo">Algum Texto</h2>
+           <h2 class="titulo">Algum Texto 2</h2>
+           <h2>Algum Texto 3</h2>
+
+           <!--Nome das Cores-->
+            <p class="color-name">Conhecimento as Cores: Css</p>
+
+            <!--1:Hex-->
+
+            <h2 class="hex">hESXADECIMAL</h2>
+
+            <p class="simplificado">Hex simplificado</p>
+
+            <!--RGB-->
+             
+            <h3 class="RGB">RGB: Green  e Blue</h3>
+            
+            <p class="Mix">Estilização pelo RBG</p>
+
+            <!--RGBA-->
+
+            <p class="RGBA">Estilizado pelo RGBA</p>
+
+            <!--HSL-->
+
+             <h2 class="hsl">Cor com HSL</h2>
+
+             <!--Background-->
+              <h3 class="bg">BG Colo</h3>
+            
+              <p class="Back">Em 2016 coloquei como uma das metas do ano "Aprender a fazer um bom nhoque", mas foi só no final de 2018 que finalmente fiz um nhoque com cara e sabor de nhoque. Um prato que eu pensei "Eu pagaria por isso em um restaurante. Não pagaria muito caro, mas pagaria". E considerando meus talentos gastronômicos, pra mim isso foi uma baita conquista, que só foi possível porque eu me empenhei muito mais do que nos anos anteriores. Em um mês eu fiz mais nhoques (e tentativas de nhoques) do que a soma de todas as tentativas dos dois anos anteriores. Eu aprendi empiricamente que a repetição constante é 
+                um importante hábito para aprendermos a fazer algo que exige técnica, tal como escrever... Que é uma das minhas metas de 2019 :)</p> 
+                
+                <!--Cor de Fundo com Background-->
+
+                <Div class="bg-opacity">
+                  <p>Estamso fazendo a cor de frundo</p>
+                </Div>
+
+                <div class="bg-opacity-2">
+                  <p>Estamso fazendo a cor de frundo</p>
+                </div>
+
+                <div class="rgba-opacity">
+
+                      <h1>Este tutulo precisa esta visivel</h1>
+
+                </div>
+
+                    <!--Background images-->
+                 
+            <h1 class="bg-image">Este titulo possui imagens!</h1>
+
+          <!--Centralizar a Imagens = "background"-->
+
+             <div class="not-centered-bg"></div>
+             <div class="centered-bg"></div>
+              
+             <!--BOX MODEL-->
+             <!--Html e criado em todo elemento por ela, alem de ser estilizada pelo HTML, se con sistema em Altura, largura, padding, border e margin-->
+              
+             <!--altura e largura-->
+
+             <div class="height-width"></div>
+             <div class="height-width-2"></div>
+
+             <!--Padding-->
+
+             <div class="without-padding">Este não possui padding</div>
+             <div class="padding">Este possui padding</div>
+
+             <p class="padding-individual">Ele possui padding diferentes</p>
+
+             <!--shorthand properties-->
+
+             <p class="shorthsd-padding2">Algum texto 2</p>
+             <p class="shrthand-padding-3">alguntexto 3</p>
+
+             <!--Padding e Width-->
+
+             <div class="without-border-box">
+
+              <p>Podding e Width</p>
+             </div>
+
+             <div class="border-box2">
+
+              <p>Podding e Width</p>
+
+             </div>
+
+             <!--Bordas-->
+            <!--Elemento central e fica entre padding e margin, tendo seu proposito decorativo. Suas regras "tamanho, aspecto e cor da borda"--> 
+
+             <div class="border">Border</div>
+             <div class="border-2">Border 2</div>
+
+             <!--bordas Individual-->
+
+            <p class="border-left">Borda Direita</p>
+            <p class="border-bottom">Borda Esquerda</p>
+
+            <!--Borda Arrendondada-->
+
+             <div class="rounded-p">Arrendondada</div>
+             <br />
+
+             <div class="rounded-2">Arrendondada master</div>
+
+             <!--Margem-->
+
+             <!--responsavel pelo espaçameno externo do elemento-->
+                
+                <div class="margin">Eu tenho Margem</div>
+                <div class="margin-top">Eu tenho margen no topo</div>
+                <div class="margin-shorthand">Utilizano shorthand</div>
+
+                <!--Box model juntos-->
+
+                <!--Em algunns elementos vamos utilizar eles para definir tamanho, largura, espaçamento, etc.-->
+
+                    <div class="box-model">
+                      <p>Tenho todas as propreiedades</p>
+                    </div>
+
+                <!--alinhamento de texto-->
+             <!--Podemos alinhar o nossos texto em varias direções, utilizando por padroes as regras text-align e right-->
+
+                
+             <p class="text-aligned">
+              Em 2016 coloquei como uma das metas do ano "Aprender a fazer um bom nhoque", 
+          
+            </p>
+          
+            <div class="container-center">
+              <h2>Estamos centralizando</h2>
+               <p>Algum texto</p>
+            </div>
+
+        </body>
+</html>
