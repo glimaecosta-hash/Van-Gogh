@@ -1,16 +1,21 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .titulo-principal {
-    background-image: url('img/Fundo.avif');
+    background-image: url('img/Fundo.3.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: rgb(27, 23, 23);
+    color: #fff;
     padding: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
+    margin: 0;
   
 }
 
@@ -89,45 +94,24 @@ h2 {
 }
 
 
-.bloco-texto-flutuando {
-    position: fixed;
-    
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-scroll.ativo {
+    opacity: 1;
+    transform: translateY(0);
+
 }
 
 
-/* ============================================== */
-/* ESTILIZAÇÃO PARA O BLOCO FLUTUANTE/FIXO */
-/* ============================================== */
-.bloco-texto-flutuante {
-    /* 1. Efeito Chave: Fixa o elemento na janela do navegador */
-    position: fixed; 
-    
-    /* 2. Posição na Tela (Exemplo: Canto Inferior Direito) */
-    bottom: 30px; /* 30px acima da borda inferior */
-    right: 30px;  /* 30px à esquerda da borda direita */
-    /* Você pode ajustar para 'top: 50%; left: 50%; transform: translate(-50%, -50%);' para centralizar */
-
-    /* 3. Dimensões Fixas (Para forçar a rolagem interna) */
-    width: 250px; 
-    height: 150px; 
-    
-    /* 4. Rolagem Interna (A barra de rolagem) */
-    overflow-y: auto; /* Mostra a barra somente se o conteúdo for maior que 150px */
-    
-    /* 5. Estilização Visual (Cores e Formato) */
-    background-color: #ffffff; /* Fundo claro */
-    color: #333; /* Texto escuro */
-    border: 1px solid #ccc;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacá-lo */
-    border-radius: 8px; /* Cantos arredondados */
-    z-index: 1000; /* Garante que fique acima de outros elementos na página */
-}
-
-/* Ajuste de estilo para o parágrafo dentro do bloco flutuante */
-.bloco-texto-flutuante p {
-    margin: 0;
+.assinatura {
+    text-align: center;
     font-size: 0.9rem;
+    color: #666;
+    padding: 20px 0;
 }
 
 

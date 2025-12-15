@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./stylization.css" />
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
     <title>A Noite Estrelada</title>
+
+
 
     <style>
       .slideshow-container {
@@ -40,21 +43,11 @@
   </head>
 
   <body>
+    
 
-    <!-- Bloco fixo de informações -->
-    <div  class="bloco-texto-flutuante fade-scroll">
-      <p>
-        <strong>Athletics:</strong> Watch running, jumping, and throwing events.
-        <br />
-        Este é um bloco de informação extra que flutua na tela.
-        <br /><br />
-        <strong>Dica:</strong> Role a página para ver o efeito de fixação.
-        <br /><br />
-        Adicionei texto extra aqui para testar a barra de rolagem interna.
-      </p>
-    </div>
+  
+    
 
-    <!-- Título principal -->
     <div class="titulo-principal">
       <div class="card-titulo">
         <h1>Vincent Willem van Gogh</h1>
@@ -64,37 +57,33 @@
       </div>
     </div>
 
-    <!-- Conteúdo principal com texto + slideshow -->
-    <div class="bloco-texto-flutuante">
+    <div>
       <div class="conteudo-lado-a-lado">
-
-        <!-- Texto sobre Van Gogh -->
-        <div class="text">
+        <div class="text fade-scroll">
           <p>
             Vincent van Gogh foi um dos artistas mais marcantes e intensos da
             história da arte. Nascido em 1853, na Holanda, ele não teve uma vida
-            fácil: passou por dificuldades financeiras, crises emocionais e muita
-            incompreensão enquanto estava vivo. Apesar disso, sua sensibilidade e
-            jeito único de enxergar o mundo transformaram completamente a pintura
-            moderna. Van Gogh é conhecido por seu estilo vibrante, pinceladas
-            fortes e cores exageradamente vivas — tudo isso refletia a turbulência
-            e a paixão que ele carregava por dentro. Obras como Noite Estrelada,
-            Girassóis e Quarto em Arles mostram exatamente essa mistura de emoção
-            e intensidade que virou sua marca registrada. Durante sua vida, ele
-            praticamente não vendeu quadros, mas continuou produzindo sem parar,
-            apoiado principalmente por seu irmão Theo, que foi seu maior amigo e
-            incentivador. Van Gogh enfrentou problemas graves de saúde mental, e
-            suas crises acabaram marcando profundamente sua trajetória. Ele
-            morreu muito jovem, aos 37 anos, mas deixou mais de 2.000 obras entre
-            pinturas e desenhos. Hoje, é considerado um dos maiores gênios da
-            arte, e sua história inspira milhões de pessoas pelo mundo — uma prova
-            de que, às vezes, o valor de alguém só é realmente reconhecido muito
-            depois.
+            fácil: passou por dificuldades financeiras, crises emocionais e
+            muita incompreensão enquanto estava vivo. Apesar disso, sua
+            sensibilidade e jeito único de enxergar o mundo transformaram
+            completamente a pintura moderna. Van Gogh é conhecido por seu estilo
+            vibrante, pinceladas fortes e cores exageradamente vivas — tudo isso
+            refletia a turbulência e a paixão que ele carregava por dentro.
+            Obras como Noite Estrelada, Girassóis e Quarto em Arles mostram
+            exatamente essa mistura de emoção e intensidade que virou sua marca
+            registrada. Durante sua vida, ele praticamente não vendeu quadros,
+            mas continuou produzindo sem parar, apoiado principalmente por seu
+            irmão Theo, que foi seu maior amigo e incentivador. Van Gogh
+            enfrentou problemas graves de saúde mental, e suas crises acabaram
+            marcando profundamente sua trajetória. Ele morreu muito jovem, aos
+            37 anos, mas deixou mais de 2.000 obras entre pinturas e desenhos.
+            Hoje, é considerado um dos maiores gênios da arte, e sua história
+            inspira milhões de pessoas pelo mundo — uma prova de que, às vezes,
+            o valor de alguém só é realmente reconhecido muito depois.
           </p>
         </div>
 
-        <!-- Slide -->
-        <div class="slideshow-container">
+        <div class="slideshow-container fade-scroll">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
             class="meuSlide"
@@ -111,11 +100,9 @@
             style="display: none"
           />
         </div>
-
       </div>
     </div>
 
-    <!-- Script do slideshow -->
     <script>
       let slideIndex = 0;
       const tempoTroca = 3000;
@@ -140,18 +127,18 @@
       mostrarSlides();
     </script>
 
-    <!-- Lista e detalhes -->
-    <div class="bloco-texto-flutuante">
+    <div>
       <div class="linha-horizontal">
-
-        <section class="work">
+        <section class="work fade-scroll">
           <h4>Principais Aspectos da Vida e Obra</h4>
           <ul>
             <li>
-              <strong>Pós-Impressionismo:</strong> Van Gogh é o maior nome desse movimento...
+              <strong>Pós-Impressionismo:</strong> Van Gogh é o maior nome desse
+              movimento...
             </li>
             <li>
-              <strong>A Carreira Curta:</strong> Ele só começou a pintar seriamente por volta dos 27 anos...
+              <strong>A Carreira Curta:</strong> Ele só começou a pintar
+              seriamente por volta dos 27 anos...
             </li>
             <li>
               <strong>O Estilo:</strong> Suas obras são inconfundíveis:
@@ -162,14 +149,15 @@
               </ul>
             </li>
             <li>
-              <strong>Relação com o Irmão Theo:</strong> Seu maior apoio financeiro e emocional.
+              <strong>Relação com o Irmão Theo:</strong> Seu maior apoio
+              financeiro e emocional.
             </li>
           </ul>
         </section>
 
-        <section class="unordered">
-          <h3 class="ordered">Obras Mais Famosas</h3>
-          <ol type="I">
+        <section class="unordered fade-scroll">
+          <h3 class="ordered fade-scroll">Obras Mais Famosas</h3>
+          <ol type="I fade-scroll">
             <li>A Noite Estrelada (1889)</li>
             <li>Girassóis (1888–1889)</li>
             <li>Quarto em Arles (1888)</li>
@@ -178,13 +166,11 @@
             <li>Terraço do Café na Praça do Fórum à Noite (1888)</li>
           </ol>
         </section>
-
       </div>
     </div>
 
-    <!-- Final -->
     <div class="bloco-flutuante">
-      <div class="final-section">
+      <div class="final-section fade-scroll">
         <h2>Morte e legado</h2>
 
         <div class="content-wrapper">
@@ -204,5 +190,14 @@
       </div>
     </div>
 
+  <footer class="assinatura">
+     <p>
+    Desenvolvido por <strong>Giovana Lima Costa</strong> © 2025
+     </p>
+  </footer>
+
+
+    <script src="./scroll.js"></script>
   </body>
 </html>
+
